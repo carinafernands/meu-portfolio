@@ -1,0 +1,42 @@
+
+<section id="certificados" class="w-full py-16 bg-black text-gray-200">
+  <div class="text-3xl font-semibold text-center mb-8 text-purple-400">
+  <h2 class="text-4xl font-bold text-purple-400 mb-8 text-center">
+    Certificados
+  </h2>
+  </div>
+
+  <mat-accordion class="rounded-xl bg-gray-900">
+    <mat-expansion-panel *ngFor="let cert of certificados">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ cert.titulo }}
+        </mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+      <div class="p-5 text-gray-300 leading-6">
+        <p class="mb-3">
+          <span class="font-semibold text-purple-300">Instituição:</span>
+          {{cert.instituicao}}
+        </p>
+        <p class="mb-3">
+          <span class="font-semibold text-purple-300">Carga horária:</span>
+          {{cert.horas}} horas
+        </p>
+
+        <p class="mt-4">
+          <a
+            class="text-purple-400 underline hover:text-purple-300 transition"
+            href="assets/certificados/{{cert.link}}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver certificado
+          </a>
+        </p>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+</section>

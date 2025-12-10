@@ -1,0 +1,73 @@
+<section id="projetos" class="w-full py-20 bg-black text-gray-200">
+  <div class="max-w-6xl mx-auto px-4">
+<h2 class="text-4xl font-bold text-purple-400 mb-12 text-center">
+  Projetos
+</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-2 ld:grid-cols-3 gap-10">
+
+  <!-- card de projeto -->
+<mat-card
+  *ngFor="let p of projetos"
+  appearance="outlined"
+  class="bg-gray-900 border border-gray-700 rounded-xl shadow-lg
+  hover:shadow-purple-500/30 transition transform hover:-translate-y-1"
+>
+<!-- imagem -->
+<img
+  mat-card-image
+  [src]="p.imagem"
+  [alt]="p.nome"
+  class="h-48 object-cover"
+>
+
+<!-- header -->
+
+<mat-card-header>
+  <mat-card-title class="text-purple-300 text-xl font-semibold text-center">
+    {{p.nome}}
+  </mat-card-title>
+
+  <mat-card-subtitle class="text-gray-400">
+    {{p.tecnologias}}
+  </mat-card-subtitle>
+</mat-card-header>
+
+<!-- descrição -->
+
+<mat-card-content>
+  <p class="tex-gray-300 text-sm leading-relaxed">
+    {{p.descricao}}
+  </p>
+</mat-card-content>
+
+<mat-card-actions class="flex gap-6 mt-4">
+
+  <a
+    mat-flat-button
+    color="primary"
+    [href]="p.link"
+    target="_blank"
+    class="!bg-purple-600 hover:!bg-purple-900 text-white px-4 py-2 rounded-lg"
+  >
+    🔗 Acessar
+  </a>
+
+  <a
+    mat-flat-button
+    color="primary"
+    [href]="p.github"
+    target="_blank"
+    class="!bg-purple-600 hover:!bg-purple-900 text-white px-4 py-2 rounded-lg"
+  >
+    💻 GitHub
+  </a>
+
+</mat-card-actions>
+
+</mat-card>
+
+</div>
+  </div>
+
+</section>

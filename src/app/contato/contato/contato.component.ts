@@ -10,7 +10,7 @@ export class ContatoComponent {
   contatos = [
     {
       nome: "WhatsApp",
-      descricao: "Mande uma mensagem para mim direto no WhatsApp.",
+      descricao: "Enviar mensagem.",
       link: "https://wa.me/5581999399920",
       textoButton:"Enviar mensagem"
     },

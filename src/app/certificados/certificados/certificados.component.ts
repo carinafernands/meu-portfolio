@@ -9,6 +9,13 @@ import { Component } from '@angular/core';
 export class CertificadosComponent {
 
   certificados = [
+
+      {
+      titulo: "Administrador/Analista Salesforce",
+      instituicao: "Udemy",
+      horas: "-",
+      link: "salesforce_adm_analista.pdf"
+    },
     {
       titulo: "Programação BackEnd com JavaScript",
       instituicao: "Softex Pernambuco",
@@ -38,7 +45,14 @@ export class CertificadosComponent {
       instituicao: "Cisco",
       horas: "-",
       link: "python_cisco.pdf"
+    },
+     {
+      titulo: " Introdução a Cyber Segurança ",
+      instituicao: "Cisco",
+      horas: "-",
+      link: "Introduction_to_Cybersecurity_Badge20231109-29-y09w9p.pdf"
     }
+
 
   ]
 

@@ -14,13 +14,19 @@ export class CertificadosComponent {
       titulo: "Administrador/Analista Salesforce",
       instituicao: "Udemy",
       descricao:"Gestão de relacionamento com o cliente (CRM) · Administração de Salesforce · Desenvolvimento de Salesforce.",
-      link: "linux_conceitos_basicos.pdf"
+      link: "salesforce_adm_analista.pdf"
+    },
+     {
+      titulo: "Training Force 2026 - Salesforce",
+      instituicao: "Sotelli",
+      descricao:"Administração de Salesforce · Desenvolvimento de Salesforce.",
+      link: "training_force.pdf"
     },
       {
       titulo: "Linux - Conceitos e Principais comandos",
       instituicao: "Udemy",
       descricao:"Linux · Linux Terminal · Bash/Shell · Administração de Sistemas Linux · Gerenciamento de Processos.",
-      link: "salesforce_adm_analista.pdf"
+      link: "linux_conceitos_basicos.pdf"
     },
     {
       titulo: "Programação BackEnd com JavaScript",
